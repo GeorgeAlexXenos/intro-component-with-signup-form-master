@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="container">
+        <div class="title">
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <section class="offer-form">
+          <div class="paragraph-offer">
+            <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+          </div>
+
+          <form class="form">
+            <div class="inputWrapper">
+              <img src="/images/icon-error.svg" />
+              <input type="text" placeholder="First Name" id="firstName" />
+            </div>
+            <span class="span1">First Name cannot be empty</span>
+            <div class="inputWrapper">
+              <img src="/images/icon-error.svg" />
+              <input type="text" placeholder="Last Name" id="lastName" />
+            </div>
+            <span class="span2">Last Name cannot be empty</span>
+            <div class="inputWrapper">
+              <img src="/images/icon-error.svg" />
+              <input type="email" id="email" placeholder="Email Address" />
+            </div>
+            <span class="span3">Looks like this is not email</span>
+            <div class="inputWrapper">
+              <img src="/images/icon-error.svg" />
+              <input type="password" id="password" placeholder="Password" />
+            </div>
+            <span class="span4">Password cannot be empty</span>
+            <button class="button">CLAIM YOUR FREE TRIAL</button>
+            <p>
+              By clicking the button, you are agreeing to our
+              <a href="">Terms and Services</a>
+            </p>
+          </form>
+        </section>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

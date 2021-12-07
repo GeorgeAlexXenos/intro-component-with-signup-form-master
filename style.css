@@ -1,0 +1,239 @@
+/* font-family: 'Poppins', sans-serif; */
+
+:root {
+  /* ### Primary */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  /* ### Accent */
+  --blue: hsl(248, 32%, 49%);
+  /* ### Neutral */
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+}
+
+/* general setting */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: url(/images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+.body {
+  background-color: hsla(0, 100%, 74%, 0.658);
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  max-width: 385px;
+  margin: 0 auto;
+  text-align: center;
+}
+.title h1 {
+  margin-bottom: 1.5rem;
+  line-height: 2.5rem;
+}
+.title p {
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+}
+.offer-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.paragraph-offer {
+  background-color: var(--blue);
+  width: 330px;
+  min-width: 90%;
+  margin: 1.4rem auto;
+  border-radius: 0.6rem;
+}
+.paragraph-offer > p {
+  color: white;
+  text-align: center;
+  max-width: 220px;
+  margin: 1rem auto;
+}
+.paragraph-offer > p span {
+  font-weight: 700;
+}
+.form {
+  width: 330px;
+  min-width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: 1px solid var(--grayishBlue);
+}
+button {
+  font-weight: 600;
+  color: white;
+  background-color: var(--green);
+  border: none;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.281);
+  outline: 2px solid rgba(0, 0, 0, 0.072);
+  outline-offset: -2px;
+  transition: all 350ms;
+}
+button:hover {
+  color: aliceblue;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.377);
+}
+button:active {
+  background-color: hsl(154, 54%, 70%);
+}
+
+.form {
+  position: relative;
+}
+.form p {
+  font-size: 0.7rem;
+  max-width: 250px;
+  margin: 0 auto;
+}
+p > a {
+  text-decoration: none;
+  color: var(--red);
+  font-weight: 600;
+}
+.form > span {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--red);
+  position: absolute;
+  top: 75px;
+  right: 1.5rem;
+  display: none;
+}
+.form > .span2 {
+  top: 145px;
+}
+.form > .span3 {
+  top: 215px;
+}
+.form > .span4 {
+  top: 285px;
+}
+.inputWrapper {
+  position: relative;
+}
+.inputWrapper img {
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 37%;
+  transform: translate(-50%, -50%);
+}
+
+/* ==================================== */
+/* ========== media queries ========== */
+/* ================================== */
+@media (min-width: 1000px) {
+  body {
+    background: url(./images/bg-intro-desktop.png);
+  }
+  .container {
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title h1 {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+  }
+  .title p {
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+    padding: 0;
+  }
+  .title,
+  .offer-form {
+    flex: 1;
+  }
+  .title {
+    max-width: 500px;
+    text-align: left;
+    margin: 2.5rem;
+  }
+  .paragraph-offer > p {
+    max-width: unset;
+    padding: 0.2rem;
+  }
+
+  .form {
+    padding: 2rem;
+  }
+  section.offer-form {
+    justify-self: flex-end;
+    display: flex;
+    margin: 2.5rem;
+  }
+  input {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+  }
+
+  .paragraph-offer,
+  .form {
+    min-width: 480px;
+  }
+  .form p {
+    max-width: unset;
+  }
+  .form > span {
+    top: 90px;
+    right: 2.2rem;
+  }
+  .form > .span2 {
+    top: 178px;
+  }
+  .form > .span3 {
+    top: 265px;
+  }
+  .form > .span4 {
+    top: 353px;
+  }
+} ;
