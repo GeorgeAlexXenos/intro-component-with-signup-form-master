@@ -54,6 +54,7 @@ body {
 .title h1 {
   margin-bottom: 1.5rem;
   line-height: 2.5rem;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.37);
 }
 .title p {
   margin-bottom: 2rem;
@@ -70,6 +71,7 @@ body {
   min-width: 90%;
   margin: 1.4rem auto;
   border-radius: 0.6rem;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.322);
 }
 .paragraph-offer > p {
   color: white;
@@ -125,6 +127,7 @@ button:active {
 
 .form {
   position: relative;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.226);
 }
 .form p {
   font-size: 0.7rem;
