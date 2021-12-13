@@ -20,7 +20,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  width: 100%;
+  max-width: 100vw;
   min-height: 100vh;
   background: url(/images/bg-intro-mobile.png);
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body {
 .body {
   padding: 2rem 0;
   background-color: hsla(0, 100%, 74%, 0.658);
-  min-width: 100vw;
+  /* max-width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
